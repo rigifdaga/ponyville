@@ -179,7 +179,7 @@ Navigator.push() dan Navigator.pushReplacement() adalah dua metode yang digunaka
 1. Navigator.push(): Metode ini digunakan untuk menavigasi ke halaman baru sambil mempertahankan halaman saat ini di tumpukan navigasi. Jadi, ketika pengguna menekan tombol kembali, aplikasi akan kembali ke halaman sebelumnya.
 2. Navigator.pushReplacement(): Metode ini juga digunakan untuk menavigasi ke halaman baru, tetapi halaman saat ini akan dihapus dari tumpukan navigasi. Jadi, ketika pengguna menekan tombol kembali, aplikasi tidak akan kembali ke halaman sebelumnya, tetapi ke halaman sebelum halaman tersebut1.
 
-Misalnya, jika Anda memiliki tiga halaman: Halaman A, B, dan C. Anda berada di Halaman A dan menggunakan Navigator.push() untuk pergi ke Halaman B, kemudian menggunakan Navigator.pushReplacement() untuk pergi ke Halaman C. Jika Anda menekan tombol kembali, Anda akan kembali ke Halaman A, bukan Halaman B, karena Halaman B telah digantikan oleh Halaman C.
+Misalnya, jika kita memiliki tiga halaman: Halaman A, B, dan C. kita berada di Halaman A dan menggunakan Navigator.push() untuk pergi ke Halaman B, kemudian menggunakan Navigator.pushReplacement() untuk pergi ke Halaman C. Jika kita menekan tombol kembali, kita akan kembali ke Halaman A, bukan Halaman B, karena Halaman B telah digantikan oleh Halaman C.
 
 <h1>Flutter Wigdet Layout</h1>
 
@@ -187,7 +187,7 @@ Flutter menyediakan berbagai macam widget layout untuk mengatur tata letak antar
 
 1. Container: Widget yang menggabungkan pengecatan umum, penempatan, dan widget ukuran.
 2. Row dan Column: Widget ini memungkinkan kita untuk menyusun widget atau komponen-komponen UI, baik secara horizontal (Row) maupun vertikal (Column).
-3. Stack: Widget ini berguna jika Anda ingin menumpuk beberapa anak dalam cara yang sederhana.
+3. Stack: Widget ini berguna jika kita ingin menumpuk beberapa anak dalam cara yang sederhana.
 4. Padding: Widget yang memberikan padding pada anaknya.
 5. Expanded: Widget yang memperluas anak dari Row, Column, atau Flex.
 6. GridView: Widget yang mengimplementasikan komponen daftar grid.
@@ -197,7 +197,7 @@ Flutter menyediakan berbagai macam widget layout untuk mengatur tata letak antar
 
 Pada kode terdapat dua elemen input pada form, yaitu:
 
-1. **TextFormField**: Digunakan untuk memasukkan teks. Pada kode Anda, elemen ini digunakan dua kali, yaitu untuk memasukkan "Nama Produk" dan "Amount". TextFormField ini dilengkapi dengan validator untuk memastikan bahwa field tidak boleh kosong dan untuk field "Amount", nilai yang dimasukkan harus berupa angka.
+1. **TextFormField**: Digunakan untuk memasukkan teks. Pada kode saya, elemen ini digunakan dua kali, yaitu untuk memasukkan "Nama Produk" dan "Amount". TextFormField ini dilengkapi dengan validator untuk memastikan bahwa field tidak boleh kosong dan untuk field "Amount", nilai yang dimasukkan harus berupa angka.
 
 2. **ElevatedButton**: Digunakan sebagai tombol submit. Ketika tombol ini ditekan, maka akan memeriksa apakah semua field telah diisi dengan benar melalui `_formKey.currentState!.validate()`. Jika validasi berhasil, maka akan menampilkan dialog bahwa produk berhasil tersimpan.
 
