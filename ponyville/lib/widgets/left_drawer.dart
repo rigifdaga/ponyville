@@ -1,5 +1,6 @@
 //OK TODO Implement this library.
 import 'package:flutter/material.dart';
+import 'package:ponyville/screens/list_product.dart';
 import 'package:ponyville/screens/menu.dart';
 
 // OK TODO: Impor halaman ShopFormPage jika sudah dibuat
@@ -71,6 +72,17 @@ class LeftDrawer extends StatelessWidget {
                 )
               );
             },
+          ),
+          ListTile(
+              leading: const Icon(Icons.shopping_basket),
+              title: const Text('Daftar Produk'),
+              onTap: () {
+                  // Route menu ke halaman produk
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductPage()),
+                  );
+              },
           ),
         ],
       ),

@@ -587,3 +587,34 @@ class ShopCard extends StatelessWidget {
 ```
     
 </details>
+
+<details>
+
+<summary>Tugas 3</summary>
+
+<h1>CookieRequest</h1>
+
+CookieRequest adalah kelas yang digunakan untuk mengelola cookies dalam aplikasi Flutter. Fungsi utamanya adalah untuk menyimpan dan mengambil cookies yang digunakan saat berinteraksi dengan server web. Instance CookieRequest perlu dibagikan ke semua komponen di aplikasi Flutter karena cookies sering digunakan untuk otentikasi pengguna, pelacakan sesi, dan menyimpan preferensi pengguna. Dengan membagikan instance yang sama, kita memastikan bahwa semua komponen aplikasi memiliki akses ke informasi yang sama dan konsisten.
+
+<h1>Mekanisme Pengambilan Data dari JSON sampai di Flutter</h1>
+
+Mekanisme pengambilan data dari JSON hingga dapat ditampilkan pada Flutter melibatkan beberapa langkah:
+
+1. Pertama, kita perlu mengambil data JSON, biasanya dari API web menggunakan HTTP GET atau POST.
+2. Kedua, data JSON yang diterima kemudian diuraikan atau ‘diparsing’ menjadi objek atau struktur data yang dapat digunakan oleh Flutter. Ini biasanya dilakukan dengan menggunakan fungsi `jsonDecode()` dari paket `dart:convert`.
+3. Ketiga, objek atau struktur data ini kemudian digunakan untuk membangun widget Flutter, seperti `ListView` atau `Card`, yang kemudian ditampilkan ke pengguna.
+
+<h1>Mekanisme Autentikasi pada Flutter ke Django dan Tampilan Menu</h1>
+
+Mekanisme autentikasi dari input data akun pada Flutter ke Django melibatkan beberapa langkah:
+
+1. Pertama, pengguna memasukkan data akun mereka (biasanya email dan kata sandi) melalui form di aplikasi Flutter.
+2. Kedua, data ini kemudian dikirim ke server Django, biasanya melalui HTTP POST.
+3. Ketiga, Django kemudian memverifikasi data ini dengan data yang ada di database. Jika data cocok, Django akan mengirimkan balasan yang mengkonfirmasi bahwa autentikasi berhasil.
+4. Keempat, aplikasi Flutter kemudian menerima balasan ini dan, jika autentikasi berhasil, menu ditampilkan kepada pengguna. Jika autentikasi gagal, pesan kesalahan ditampilkan.
+
+<h1>Widget</h1>
+
+<h1>Implementasi Checklist</h1>
+
+</details>
