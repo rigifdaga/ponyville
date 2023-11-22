@@ -1,6 +1,6 @@
 <details>
 
-<summary>Tugas 1</summary>
+<summary>Tugas 7</summary>
 
 <h1>Perbedaan Utama antara Stateless dan Stateful Widget dalam Konteks Pengembangan Aplikasi Flutter</h1>
 
@@ -170,7 +170,7 @@ class ShopCard extends StatelessWidget {
 
 <details>
 
-<summary>Tugas 2</summary>
+<summary>Tugas 8</summary>
 
 <h1>Navigator.push() dan Navigator.pushReplacement()</h1>
 
@@ -590,7 +590,7 @@ class ShopCard extends StatelessWidget {
 
 <details>
 
-<summary>Tugas 3</summary>
+<summary>Tugas 9</summary>
 
 <h1>Pengambilan Data JSON tanpa Membuat Model</h1>
 Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Salah satu caranya adalah dengan menggunakan fungsi jsonDecode dari pustaka dart:convert yang dapat mengubah string JSON menjadi Map<String, dynamic> . Kemudian, kita bisa mengakses nilai-nilai yang kita butuhkan dari map tersebut dengan menggunakan kunci-kunci yang sesuai.
@@ -649,5 +649,50 @@ Berikut adalah daftar widget yang digunakan dalam kode Flutter:
 27. LoginPage: Widget yang digunakan untuk menampilkan halaman login aplikasi. Widget ini merupakan subclass dari StatefulWidget yang memiliki state atau kondisi yang berubah-ubah.
 
 <h1>Implementasi Checklist</h1>
+
+<h2>Integrasi Autentikasi Django-Flutter</h2>
+
+Django Setup:
+
+1. Membuat django-app bernama "authentication" pada proyek Django.
+2. Menambahkan "authentication" ke INSTALLED_APPS di settings.py.
+3. Menginstall library django-cors-headers dengan perintah pip install django-cors-headers.
+4. Menambahkan corsheaders ke INSTALLED_APPS dan middleware pada settings.py.
+5. Mengatur variabel CORS dan keamanan pada settings.py.
+6. Membuat metode view untuk login di authentication/views.py.
+7. Membuat file urls.py di folder authentication dan tambahkan URL routing.
+8. Membuat path 'auth/' pada urls.py di proyek utama.
+
+Flutter Setup:
+
+1. Menginstall package Flutter yang disediakan oleh tim asisten dosen.
+2. Memodifikasi root widget untuk menyediakan CookieRequest ke semua child widgets dengan menggunakan Provider.
+3. Membuat file login.dart di folder screens dan isi dengan kode untuk halaman login.
+
+<h2>Pembuatan Model Kustom</h2>
+
+1. Menggunakan website Quicktype untuk membuat model Dart dari data JSON.
+2. Membuat file product.dart di folder lib/models dan tempel kode dari Quicktype.
+3. Menerapkan Fetch Data dari Django ke Flutter
+4. Menambahkan dependency HTTP dengan perintah flutter pub add http.
+5. Menambahkan izin internet pada file AndroidManifest.xml.
+6. Membuat file list_product.dart di folder lib/screens untuk menampilkan produk dari Django.
+7. Menghubungkan halaman list_product.dart dengan CookieRequest.
+8. Menjalankan aplikasi dan lihat hasilnya.
+
+<h2>Integrasi Form Flutter dengan Layanan Django</h2>
+
+1. Menambahkan fungsi view di Django untuk membuat produk baru.
+2. Menambahkan path baru di urls.py untuk fungsi view tersebut.
+3. Menghubungkan halaman shoplist_form.dart dengan CookieRequest.
+4. Mengubah perintah onPressed untuk menambahkan produk baru.
+5. Menjalankan aplikasi dan coba tambahkan produk baru dari Flutter.
+
+<h2>Implementasi Fitur Logout</h2>
+
+1. Membuat metode view untuk logout di authentication/views.py.
+2. Menambahkan path baru di authentication/urls.py untuk fungsi logout.
+3. Pada Flutter, tambahkan fungsi logout pada file shop_card.dart.
+4. Menjalankan aplikasi dan coba lakukan logout.
 
 </details>
