@@ -592,6 +592,9 @@ class ShopCard extends StatelessWidget {
 
 <summary>Tugas 3</summary>
 
+<h1>Pengambilan Data JSON tanpa Membuat Model</h1>
+Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Salah satu caranya adalah dengan menggunakan fungsi jsonDecode dari pustaka dart:convert yang dapat mengubah string JSON menjadi Map<String, dynamic> . Kemudian, kita bisa mengakses nilai-nilai yang kita butuhkan dari map tersebut dengan menggunakan kunci-kunci yang sesuai.
+
 <h1>CookieRequest</h1>
 
 CookieRequest adalah kelas yang digunakan untuk mengelola cookies dalam aplikasi Flutter. Fungsi utamanya adalah untuk menyimpan dan mengambil cookies yang digunakan saat berinteraksi dengan server web. Instance CookieRequest perlu dibagikan ke semua komponen di aplikasi Flutter karena cookies sering digunakan untuk otentikasi pengguna, pelacakan sesi, dan menyimpan preferensi pengguna. Dengan membagikan instance yang sama, kita memastikan bahwa semua komponen aplikasi memiliki akses ke informasi yang sama dan konsisten.
@@ -614,6 +617,36 @@ Mekanisme autentikasi dari input data akun pada Flutter ke Django melibatkan beb
 4. Keempat, aplikasi Flutter kemudian menerima balasan ini dan, jika autentikasi berhasil, menu ditampilkan kepada pengguna. Jika autentikasi gagal, pesan kesalahan ditampilkan.
 
 <h1>Widget</h1>
+
+Berikut adalah daftar widget yang digunakan dalam kode Flutter:
+
+1. Scaffold: Ini adalah widget utama yang biasanya digunakan sebagai kerangka dasar tata letak material design.
+2. AppBar: Sebuah widget yang biasanya digunakan sebagai bagian atas Scaffold yang berisi judul dan beberapa tindakan.
+3. Padding: Widget ini digunakan untuk memberikan padding ke widget anaknya.
+4. Column: Widget ini digunakan untuk menampilkan anak-anaknya dalam tata letak vertikal.
+5. Text: Widget ini digunakan untuk menampilkan teks.
+6. SizedBox: Widget ini digunakan untuk memberikan ruang kosong dengan ukuran tertentu.
+7. FloatingActionButton: Sebuah tombol aksi yang mengambang yang biasanya ditempatkan di atas konten.
+8. Icon: Widget ini digunakan untuk menampilkan ikon.
+9. LeftDrawer: Widget ini digunakan untuk menampilkan drawer di sebelah kiri.
+10. FutureBuilder: Widget ini digunakan untuk membuat widget berdasarkan hasil Future.
+11. Center: Widget ini digunakan untuk memusatkan widget anaknya.
+12. CircularProgressIndicator: Widget ini digunakan untuk menampilkan indikator progres yang berputar.
+13. ListView.builder: Widget ini digunakan untuk membuat daftar yang dapat digulir.
+14. GestureDetector: Widget ini digunakan untuk mendeteksi gestur seperti ketukan, gesekan, dan lainnya.
+15. MaterialApp: Widget yang menyediakan fitur-fitur dasar dari Material Design, seperti tema, navigasi, dan gesture.
+16. Container: Widget yang menyediakan kotak untuk menampung widget lainnya dengan berbagai atribut, seperti padding, margin, alignment, dan decoration.
+17. MaterialPageRoute: Widget yang menyediakan transisi material design antara halaman.
+18. Navigator: Widget yang menyediakan mekanisme untuk mengelola tumpukan widget yang dapat dinavigasi, seperti halaman atau layar.
+19. ListTile: Widget yang menyediakan sebuah item yang dapat diklik pada daftar, biasanya digunakan untuk menampilkan ikon, teks, dan tindakan.
+20. DrawerHeader: Widget yang menyediakan sebuah header untuk drawer, biasanya digunakan untuk menampilkan informasi atau gambar.
+21. Drawer: Widget yang menyediakan sebuah panel yang dapat ditarik dari tepi layar, biasanya digunakan untuk menampilkan menu navigasi.
+22. MyApp: Widget yang merupakan subclass dari StatelessWidget. Widget ini merupakan widget utama yang digunakan untuk menjalankan aplikasi Flutter.
+23. StatelessWidget: Widget yang merupakan superclass dari MyApp. Widget ini merupakan widget yang tidak memiliki state atau kondisi yang berubah-ubah.
+24. Provider: Widget yang digunakan untuk menyediakan sebuah objek yang dapat diakses oleh widget-widget lainnya melalui context. Widget ini digunakan untuk menyediakan objek CookieRequest yang digunakan untuk melakukan request ke server menggunakan cookie.
+25. MaterialApp: Widget yang menyediakan fitur-fitur dasar dari Material Design, seperti tema, navigasi, dan gesture. Widget ini digunakan untuk menentukan judul, tema, dan halaman utama aplikasi.
+26. ThemeData: Widget yang digunakan untuk menentukan tema aplikasi, seperti warna, font, dan ikon. Widget ini digunakan untuk menentukan skema warna dan versi Material Design yang digunakan.
+27. LoginPage: Widget yang digunakan untuk menampilkan halaman login aplikasi. Widget ini merupakan subclass dari StatefulWidget yang memiliki state atau kondisi yang berubah-ubah.
 
 <h1>Implementasi Checklist</h1>
 
